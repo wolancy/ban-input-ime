@@ -1,1 +1,38 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div>
+    <div>
+      <input type="text" class="upd_td"/>
+    </div>
+</body>
+<style>
+    .upd_td{
+        width: 80px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        /*Chrome Safari*/
+        -webkit-ime-mode: disabled;
+        /*Mozilla Firefox*/
+        -moz-ime-mode: disabled;
+        /*Opera*/
+        -o-ime-mode:  disabled;
+        /*Internet Explorer*/
+        -ms-ime-mode:  disabled;
+        /*CSS3 Standard*/
+        ime-mode: disabled;
+    }
+</style>
+<script>
+  var obj = document.getElementsByClassName("upd_td");
+  obj.onkeyup = function(){this.value=this.value.replace(/\D/g,'')};
+  obj.onblur = function(){this.value=this.value.replace(/\D/g,'')};
+</script>
+</html>
