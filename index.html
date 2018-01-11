@@ -9,7 +9,7 @@
 
 <div>
     <div>
-      <input type="text" class="upd_td" onkeyup = "this.value=this.value.replace(/\D/g,'')" onblur = "this.value=this.value.replace(/\D/g,'')"/>
+      <input type="text" class="upd_td" onkeyup = ""this.value=this.value.replace(/[^0-9-]+/,'');" onblur = "this.value=this.value.replace(/\D/g,'');"/>
     </div>
 </body>
 <style>
